@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+.index-image-background{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    filter: blur(4px);
+    z-index: -1;
+    opacity: 90%;
+}
