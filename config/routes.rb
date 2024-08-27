@@ -17,7 +17,10 @@ Rails.application.routes.draw do
   devise_for :users
 
   # Main page etc etc
-  root "core#index"
+  devise_scope :user do
+    root 'devise/sessions#new'
+  end
+
 
   get 'about' => "core#about", as: :about_page
 
