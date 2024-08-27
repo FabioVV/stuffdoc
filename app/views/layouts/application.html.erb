@@ -15,18 +15,10 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <header class='bg-white'>
-      <% if content_for?(:navbar) %>
-        <%= yield(:navbar) %>
-      <% else %>
-        <%= render 'layouts/nav'%>
-      <% end %>
-    </header>
-
+  <body class='<%= content_for(:grid_body) || '' %>'>
     <%= render 'layouts/messages'%>
 
-    <main>
+    <main class='<%= content_for(:main_login) || '' %>'>
       <%= yield %>
     </main>
 

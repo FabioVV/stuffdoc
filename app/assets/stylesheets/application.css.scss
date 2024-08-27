@@ -25,3 +25,22 @@
     z-index: -1;
     opacity: 90%;
 }
+
+.login-body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 100px;
+}
+
+#_alert{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
+#_alert:hover{
+    opacity: 0.5;
+}
