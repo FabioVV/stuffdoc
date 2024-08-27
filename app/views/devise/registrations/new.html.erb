@@ -117,8 +117,10 @@
             <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" %>
 
           </div>
-
+          
           <br/>
+  
+          <%# 
 
           <div class="col-span-6">
             <p class="text-sm text-gray-500">
@@ -129,8 +131,7 @@
             </p>
           </div>
 
-          <br/>
-
+          <br/> %>
 
           <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
 
@@ -147,6 +148,7 @@
             </p>
           </div>
 
+          <br />
           <%= render "devise/shared/links" %>
 
         <% end %>

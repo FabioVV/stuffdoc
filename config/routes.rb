@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     root 'devise/sessions#new'
   end
 
-
-  get 'about' => "core#about", as: :about_page
+  # just hiding the about route
+  # get 'about' => "core#about", as: :about_page
 
 end
