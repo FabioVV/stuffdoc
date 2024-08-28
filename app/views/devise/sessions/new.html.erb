@@ -7,10 +7,12 @@
     <h1 class="text-2xl font-bold sm:text-3xl">Welcome back</h1>
 
     <p class="mt-4 text-gray-500">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla eaque error neque
-      ipsa culpa autem, at itaque nostrum!
+      I got tired of not remembering stuff or not having it saved somewhere. 
+      So i decided to make this app to document stuff.
     </p>
   </div>
+
+  <br />
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "mx-auto mb-0 mt-8 max-w-md space-y-4") do |f| %>
 
@@ -19,7 +21,7 @@
 
       <div class="relative">
 
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "john@doe.com", class: "w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" %>
 
         <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
           <svg
@@ -47,7 +49,7 @@
 
       <div class="relative">
 
-        <%= f.password_field :password, autocomplete: "new-password", class: "w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" %>
+        <%= f.password_field :password, autocomplete: "new-password", placeholder: "********", class: "w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" %>
 
         <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
           <svg
@@ -82,7 +84,7 @@
         <%= link_to "Sign up", new_user_registration_path, class: "underline" %>
       </p>
 
-      <%= f.button "Login", type: "submit", class:"inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white" %>
+      <%= f.button "Login", type: "submit", class:"inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 text-gray-700 underline" %>
 
     </div>
 
